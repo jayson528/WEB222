@@ -1,0 +1,59 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Jayson Sherry__________ Student ID: 141056176____ Date: 2018/July/12____ 
+* 
+********************************************************************************/
+
+body {
+    color:black
+}
+
+nav, footer {
+    background-color: black
+}
+
+header {
+    text-align: center;
+    height: 50px;
+}
+
+.app-title {
+    font-family: 'Gaegu', cursive;
+    color:black;
+    font-style: italic
+}
+
+.main-table-container {
+    max-height: 500px;
+    max-width: 100px;
+    overflow-y: visible
+}
+
+.main-table th {
+    background-color: blue;
+    color: black;
+    font-size: 14pt;
+    height: 2px;
+}
+
+.main-table td {
+    border-style: double;
+    border-width: 2px;
+    border-color:black;
+    background: rgb(202, 206, 207);
+}
+
+span {
+    font-weight: bold;
+    color: yellow;
+}
+

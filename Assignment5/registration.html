@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sherry</title>
+        <link rel="stylesheet" href="css/normalize1.css" />
+        <script src="js/registration.js"></script> 
+    </head>
+    <body>
+        <header>
+            <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="registration.html">registration</a></li>
+                    <li><img src="img/HTML-CSS-JAVASCRIPT.png" alt="logo"/></li>
+                </ul>
+            </nav>
+            <!--<h2>Jayson Sherry</h2>-->
+        </header>
+        <div id="leftside">
+            <img src="img/leftBanner.jpg" alt="logo"/>
+        </div>
+        <section>
+            <form name="signUp" method="POST" action="https://httpbin.org/post" onsubmit="return formValidation();">
+                <div class="inputs">
+                    <h3>Name Information</h3>
+                    <input type="hidden" name="lastName" id="lastName" value="Sherry" /> 
+                    <input type="hidden" name="studentId" id="studentId" value="141056176" /> 
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" onchange="textValidation(firstName,fName)" required/>
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" name="middleName" id="middleName" placeholder="If applicable" onchange="textValidation(middleName,mName)"/>
+                    <label for="sirName">Last Name</label>
+                    <input type="text" name="sirName" id="sirName" onchange="textValidation(sirName,lName)" required/>
+                </div>
+                <div class="inputs">
+                    <h3>Address Information</h3>
+                    <label for="unitNum">Unit Number</label>
+                    <input type="number" name="unitNum" id="unitNum" placeholder="If applicable" onchange="numberValidation(unitNum,unitNumber)"/>
+                    <label for="StreetNum">Street Number</label>
+                    <input type="number" name="StreetNumber" id="StreetNum" onchange="numberValidation(StreetNum,stNumber)"/>
+                    <label for="streetName">Street Name</label>
+                    <input type="text" name="streetName" id="streetName" onchange="textValidation(streetName,stName)"/>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" onchange="textValidation(city,cityName)"/>
+                    <label for="provinceList">Province</label>
+                    <select name="Province" id="provinceList">
+                        <option value="1">Alberta</option>
+                        <option value="2">British Columbia</option>                                                      
+                        <option value="3">Manitoba</option>
+                        <option value="4">New Brunswick</option>
+                        <option value="5">Newfoundland and Labrador</option>
+                        <option value="6">Nova Scotia</option>
+                        <option value="7" selected>Ontario</option>
+                        <option value="8">Prince Edward Island</option>
+                        <option value="9">Quebec</option>
+                        <option value="10">Saskatchewan</option>
+                    </select> 
+                    <label for="postCode">Postal Code</label>
+                    <input type="text" name="postCode" id="postCode" placeholder="Ex. A1A1A1" onchange="postCodeValidation(postCode,pCode)" required />
+                </div>
+                <div class="inputs">
+                    <h3>Contact Information</h3>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" name="phoneNumber" id="phoneNumber" onchange="phoneValidation(phoneNumber,phoNumber)" required/>
+                    <label for="e-mail">Email</label>
+                    <input type="email" name="email" id="e-mail" required/>
+                    <label for="userName">User Name</label>
+                    <input type="text" name="userName" id="userName" onchange="userNameValidation(userName,uName)" required/>
+                    <label for="password1">Password</label>
+                    <input type="password" name="password1" id="password1" onchange="password1Validation(password1,pWord)" required/>
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="password2" id="password2" onchange="password2Validation(password2,pWordC,password1)" required/>
+                </div>
+                <div class="inputs" id="buttons">
+                    <button type="submit" value="Submit" id="submit">Submit</button>
+                    <button type="reset" value="Reset" id="reset" onclick="clearErrors()">Reset</button>
+                </div>
+                  
+            </form>
+        </section>
+        <div id="rightSide">
+            <br>
+            <br>
+            <br>
+            <div class="error" id="fName"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="mName"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="lName"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <br>
+            <br>
+            <br>
+            <div class="error" id="unitNumber"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="stNumber"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="stName"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="cityName"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="proName"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="pCode"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>  
+            <br>
+            <br>
+            <br>
+            <div class="error" id="phoNumber"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="email"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="uName"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="pWord"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+            <div class="error" id="pWordC"><img src="img/empty.png" alt="logo" height="15" width="15"/></div>
+        </div>
+	    <footer>
+		    <p>&copy; 2018 Jayson Sherry</p>
+	    </footer>
+    </body>
+</html>

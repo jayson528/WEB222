@@ -1,0 +1,120 @@
+/*********************************************************************************
+*
+* WEB222 – Assignment #4b
+*
+* I declare that this assignment is my own work in accordance with Seneca
+* Academic Policy. No part of this assignment has been copied manually or
+* electronically from any other source (including web sites) or distributed to
+* other students.
+*
+* Name: Jayson Sherry__ Student ID: 141056176___ Date: 2018/July/12____________
+*
+********************************************************************************/
+
+
+
+
+/* set screen max width to 960 pixles and set left and right margins to auto */
+ .main-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+ /* set the screen width to 30% and position element to the left */
+.main-container nav{
+    width: 30%;
+    float: left;
+}
+
+/* set the screen width to 70% and position element to the right */
+.main-container .main{
+    width: 70%;
+    float: right;
+}
+
+/* add 10 pixle padding around content, set background color, add a 1 pixle solid bottom border and set color and add 30 pixle bottom margin */
+.main-container header{
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    margin-bottom: 30px;
+}
+
+/* set element width to 70%, set font size to 24 pixles, position element to the right, set text alignment to right side and make top margin 10 pixles */
+.main-container header h1{
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* clear the elements, add 20 pixle padding to the top and bottom, add 10 pixle padding to the left and right, set background color, set top border to 1 pixle tick and 
+   set color, set font size to 13 pixles */
+.main-container footer{
+    clear: both;
+    padding: 20px 10px;
+    background-color:#eeeeee;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    font-size: 13px;
+}
+
+/* set element width to 30%, set font size to 25 pixles and bold */
+#logo{
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* set image width to 94 pixles and align it */
+#logo img{
+    width: 94px;
+    vertical-align: middle;
+}
+
+/* remove the numbers and bullets from the list */
+nav ul{
+    list-style-type: none;
+}
+
+/* render the link as a block level element, remove the underlining and add 5 pixle padding around the link */
+nav ul a{
+    display: block;
+    text-decoration-line: unset;
+    padding: 5px;
+}
+
+/* set element width to 30%, set new elements to be added to the right of the previous, add 8 pixle margin around element, and set element hight to 310 pixles */
+div.province{
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+
+/* set max hight to 165 pixles, set hight over flow to auto, set horizontal overflow to auto, and set a 8 pixle top and bottom margin */
+div.province.description{
+    max-height: 165px;
+    overflow: auto;
+    overflow-y: auto;
+    margin: 8px;
+}
+
+/* render the link as a block element, set text alignment to center, set background color, set text color, remove the underlineing, and add 5 pixle paddding link */
+div.province a {
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration-line: unset;
+    padding: 5px;
+}
+ 
+/* set width to 100% */
+img.flag{
+    width: 100%;
+}
